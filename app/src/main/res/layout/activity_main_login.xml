@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MainLogin">
 
+    <EditText
+        android:id="@+id/passwordLogin3"
+        android:layout_width="269dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="101dp"
+        android:background="#E8E3E3"
+        android:ems="10"
+        android:hint="   Staff ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <TextView
         android:id="@+id/textViewAppVersion2"
         android:layout_width="wrap_content"
@@ -53,40 +69,25 @@
         app:srcCompat="@drawable/skyzenlogo" />
 
     <EditText
-        android:id="@+id/staffIDLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="85dp"
+        android:id="@+id/passwordLogin"
+        android:layout_width="269dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="101dp"
+        android:background="#E8E3E3"
         android:ems="10"
-        android:hint="Staff ID"
+        android:hint="   Password"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
-        android:id="@+id/passwordLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/staffIDLogin" />
 
     <Button
         android:id="@+id/loginLogin"
         android:layout_width="126dp"
         android:layout_height="57dp"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="108dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="223dp"
         android:backgroundTint="#DF9C9C"
@@ -94,18 +95,20 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLogin" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/cantLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="168dp"
+        android:layout_marginBottom="64dp"
         android:text="Can't Login?"
+        android:textColor="#6A6767"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLogin" />
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
