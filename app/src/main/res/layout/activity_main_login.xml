@@ -93,6 +93,7 @@
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="223dp"
         android:backgroundTint="#DF9C9C"
+        android:onClick="onCLickLogin"
         android:text="LOGIN"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
