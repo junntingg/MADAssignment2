@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         fun startMainActivity() {
             mRunnable = Runnable {
-                startActivity(Intent(this, MainLogin::class.java))
+                startActivity(Intent(this, RegisterNewStaff::class.java))
                 finish()
             }
 
