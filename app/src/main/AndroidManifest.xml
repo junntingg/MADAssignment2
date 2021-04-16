@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADAssignment">
-        <activity android:name=".RegisterNewStaff"></activity>
+        <activity android:name=".homepage"></activity>
+        <activity android:name=".RegisterNewStaff" />
         <activity android:name=".MainLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
