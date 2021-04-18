@@ -3,11 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_staff_nav"
-    app:startDestination="@id/staffFragment">
-
+    app:startDestination="@id/listFragment">
     <fragment
-        android:id="@+id/staffFragment"
-        android:name="com.example.madassignment.StaffFragment"
-        android:label="fragment_staff"
-        tools:layout="@layout/fragment_staff" />
+        android:id="@+id/listFragment"
+        android:name="com.example.madassignment.listFragment"
+        android:label="Staff Management"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.madassignment.UpdateFragment"
+        android:label="Staff Details"
+        tools:layout="@layout/fragment_update">
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.madassignment.data.User" />
+    </fragment>
 </navigation>

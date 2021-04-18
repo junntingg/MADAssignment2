@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADAssignment">
+
         <activity android:name=".DisplayStaff" />
         <activity android:name=".homepage" />
         <activity android:name=".RegisterNewStaff" />

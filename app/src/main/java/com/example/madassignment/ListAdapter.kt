@@ -3,6 +3,8 @@ package com.example.madassignment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.ListFragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.madassignment.data.User
 import kotlinx.android.synthetic.main.custom_row.view.*
@@ -32,6 +34,11 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.itemView.tvAddress.text = currentItem.address
         holder.itemView.tvEmail.text = currentItem.email
         holder.itemView.tvPhoneNo.text = currentItem.phoneNo
+
+        holder.itemView.rowLayout.setOnClickListener{
+            val action = listFragmentDirections.actionListFragmentToUpdateFragment(currentItem)
+            holder.itemView.findNavController().navigate(action)
+        }
     }
 
     fun setData(user: List<User>){
