@@ -7,7 +7,7 @@
     tools:context=".MainLogin">
 
     <EditText
-        android:id="@+id/passwordLogin3"
+        android:id="@+id/staffIDLogin"
         android:layout_width="269dp"
         android:layout_height="46dp"
         android:layout_marginStart="100dp"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLogin3" />
+        app:layout_constraintTop_toBottomOf="@+id/staffIDLogin" />
 
     <Button
         android:id="@+id/loginLogin"
@@ -93,7 +93,7 @@
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="223dp"
         android:backgroundTint="#DF9C9C"
-        android:onClick="onCLickLogin"
+        android:onClick="loginLogin"
         android:text="LOGIN"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
