@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:onClick="sendReserve"
     tools:context=".fragment.Reservation">
 
     <RelativeLayout
@@ -77,6 +78,7 @@
             android:layout_marginBottom="191dp"
             android:backgroundTint="@color/gray"
             android:hapticFeedbackEnabled="true"
+            android:onClick="sendReserve"
             android:text="Button"
             android:textColor="#FFFFFF"
             android:textColorHighlight="#F8F8F8"

@@ -1,11 +1,14 @@
 package com.example.madassignment.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.madassignment.CheckInOutList
 import com.example.madassignment.R
+import com.example.madassignment.reservationList
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -57,4 +60,11 @@ class CheckIn : Fragment() {
                 }
             }
     }
+
+ /*   fun sendCheck(view: View){
+        val intent = Intent(this.context, CheckInOutList::class.java)
+
+        startActivity(intent)
+    }*/
+
 }

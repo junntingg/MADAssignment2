@@ -1,7 +1,9 @@
 package com.example.madassignment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.madassignment.fragment.CheckIn
 import com.example.madassignment.fragment.HomePage
@@ -37,4 +39,10 @@ class homepage : AppCompatActivity() {
             commit()
         }
 
+
+    fun sendMessage(view: View){
+        val intent = Intent(this, reservationList::class.java)
+
+        startActivity(intent)
+    }
 }
