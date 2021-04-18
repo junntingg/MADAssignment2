@@ -6,16 +6,15 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.*
-import androidx.core.view.get
 import androidx.lifecycle.ViewModelProvider
-import com.example.madassignment.data.User
-import com.example.madassignment.data.UserViewModel
+import com.example.madassignment.data.Customer
+import com.example.madassignment.data.CustomerViewModel
 import kotlinx.android.synthetic.main.activity_register_new_customer.*
 import java.util.*
 
 class RegisterNewCustomer : AppCompatActivity() {
 
-    private lateinit var mUserViewModel: UserViewModel
+    private lateinit var mCustomerViewModel: CustomerViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -93,7 +92,7 @@ class RegisterNewCustomer : AppCompatActivity() {
 
     fun onCLickCreate(view: View){
 
-        mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        mCustomerViewModel = ViewModelProvider(this).get(CustomerViewModel::class.java)
 
         insertDataToDatabase()
     }
@@ -110,9 +109,9 @@ class RegisterNewCustomer : AppCompatActivity() {
 
         if(inputCheck(name,gender, icNo, age, dateOfBirth, email, phoneNo,memberType)){
             //Create User Object
-            val user = User(0, name,gender, icNo, age, dateOfBirth, email, phoneNo,memberType)
+            val customer = Customer(0, name,gender, icNo, age, dateOfBirth, email, phoneNo, memberType)
             //Add Data to Database
-            mUserViewModel.addUser(user)
+            mCustomerViewModel.addCustomer(customer)
             Toast.makeText(this, "Successfully added", Toast.LENGTH_LONG).show()
         }else{
             Toast.makeText(this, "Please fill up all fields.", Toast.LENGTH_LONG).show()
