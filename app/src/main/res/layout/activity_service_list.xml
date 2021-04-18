@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serviceList">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="641dp"
+        android:layout_below="@+id/txtDateIn"
+        android:layout_marginTop="6dp"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        tools:listitem="@layout/service_item" />
+
+    <TextView
+        android:id="@+id/txtDateIn"
+        android:layout_width="207dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtDateOut"
+        android:layout_width="207dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+</RelativeLayout>

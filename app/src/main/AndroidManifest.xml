@@ -13,6 +13,8 @@
         <activity android:name=".homepage" />
         <activity android:name=".RegisterNewStaff" />
         <activity android:name=".MainLogin" />
+        <activity android:name=".serviceList"/>
+        <activity android:name=".roomList" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
