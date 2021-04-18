@@ -6,19 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".RegisterNewStaff">
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/previousArrow"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                android:layout_gravity="left">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/leckerli_one"
+                android:gravity="center_vertical"
+                android:text="Add New Staff Details"
+                android:textColor="@color/black"
+                android:textSize="30sp">
+
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
     <EditText
         android:id="@+id/nameRegisterNewStaff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="160dp"
-        android:layout_marginEnd="161dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/icNoRegisterNewStaff"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,8 +125,8 @@
 
     <Button
         android:id="@+id/buttonCreate"
-        android:layout_width="147dp"
-        android:layout_height="62dp"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
         android:layout_marginStart="162dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="162dp"
@@ -111,8 +137,37 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNoRegisterNewStaff"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtSmallTitle"
+        android:layout_width="406dp"
+        android:layout_height="33dp"
+        android:text="*Administrators can edit all settings, add, edit, and remove staff, and create, edit and delete reservations"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <TextView
+        android:id="@+id/txtSmallTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter information about your staff member."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

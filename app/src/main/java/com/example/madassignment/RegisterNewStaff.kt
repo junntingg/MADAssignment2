@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.madassignment.data.User
@@ -17,6 +20,34 @@ class RegisterNewStaff : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_new_staff)
+/*
+        val nameRegisterNewStaff: TextView = findViewById(R.id.nameRegisterNewStaff)
+        val gender: Spinner = findViewById(R.id.genderStaff)
+        ArrayAdapter.createFromResource(
+                this,
+                R.array.gender,
+                android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
+            gender.adapter = adapter
+        }
+
+        val spinnerGender: Spinner = findViewById(R.id.genderStaff)
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+                this,
+                R.array.gender,
+                android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinnerGender.adapter = adapter
+        }*/
+
+
+
+
     }
 
     fun onCLickCreate(view: View){
@@ -33,6 +64,7 @@ class RegisterNewStaff : AppCompatActivity() {
         val address = addressRegisterNewStaff.text.toString()
         val email = emailRegisterNewStaff.text.toString()
         val phoneNo = phoneNoRegisterNewStaff.text.toString()
+      //  val genderStaff = genderStaff.selectedItem.toString()
 
         if(inputCheck(name, icNo, password, address, email, phoneNo)){
             //Create User Object
