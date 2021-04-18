@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADAssignment">
-        <activity android:name=".DisplayStaff"></activity>
+        <activity android:name=".DisplayStaff" />
         <activity android:name=".homepage" />
         <activity android:name=".RegisterNewStaff" />
-        <activity android:name=".MainLogin" />
-        <activity android:name=".serviceList"/>
+        <activity android:name=".Staff.MainLogin" />
+        <activity android:name=".serviceList" />
         <activity android:name=".roomList" />
         <activity android:name=".MainActivity">
             <intent-filter>

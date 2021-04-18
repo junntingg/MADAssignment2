@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         fun startMainActivity() {
             mRunnable = Runnable {
-                startActivity(Intent(this, DisplayStaff::class.java))
+                startActivity(Intent(this, homepage::class.java))
                 finish()
             }
 
